@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postdbms.FirstSceneController">
+   <children>
+      <TextField fx:id="titleTextField" layoutX="71.0" layoutY="21.0" prefWidth="468.0" promptText="Enter Title" />
+      <TextArea fx:id="postTextArea" layoutX="71.0" layoutY="61.0" prefHeight="147.0" prefWidth="468.0" />
+      <Button fx:id="submitButton" layoutX="281.0" layoutY="208.0" mnemonicParsing="false" onAction="#submitPost" text="Post" />
+      <Button fx:id="switchSceneButton" layoutX="513.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToSecondScene" text="View Posts" />
+      <Button fx:id="selectImageButton" layoutX="73.0" layoutY="208.0" onAction="#selectImage" text="Select Image" />
+      <ImageView fx:id="postImageView" fitHeight="100.0" fitWidth="100.0" layoutX="65.0" layoutY="238.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap_main" prefHeight="396.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socketprogrammngapp.HelloController">
+   <children>
+      <Button fx:id="send_btn" layoutX="404.0" layoutY="338.0" text="Send" />
+      <TextField fx:id="tf_message" layoutX="30.0" layoutY="338.0" prefHeight="26.0" prefWidth="361.0" />
+      <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30.0" layoutY="70.0" prefHeight="256.0" prefWidth="418.0">
+        <content>
+                  <VBox fx:id="vbox_messages" prefHeight="248.0" prefWidth="412.0" />
+
+        </content>
+      </ScrollPane>
+      <Label layoutX="114.0" layoutY="26.0" prefHeight="15.0" prefWidth="94.0" text="Messenger">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginwithdbms.HomeController">
+    <Button text="Create Post" layoutX="100" layoutY="100" onAction="#createPost"/>
+    <Button text="View Your Posts" layoutX="200" layoutY="100" onAction="#viewUserPosts"/>
+    <Button text="View All Posts" layoutX="300" layoutY="100" onAction="#viewAllPosts"/>
+
+    <TextField fx:id="titleField" layoutX="100" layoutY="150" promptText="Post Title"/>
+    <TextArea fx:id="contentField" layoutX="100" layoutY="200" prefHeight="200" prefWidth="400" promptText="Post Content"/>
+</AnchorPane>

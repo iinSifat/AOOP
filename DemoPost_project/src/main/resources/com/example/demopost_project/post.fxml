@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nextnest.newPostController">
+    <children>
+        <AnchorPane prefHeight="900.0" prefWidth="250.0" style="-fx-background-color: #2D3447;">
+            <children>
+                <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="35.0" layoutY="20.0">
+                    <image>
+                        <Image url="@../../../logo%20bgr.png" />
+                    </image>
+                </ImageView>
+                <Line endX="80.0" layoutX="90.0" layoutY="220.0" startX="-80.0" stroke="#a0a2ab" />
+                <Button layoutX="35.0" layoutY="450.0" mnemonicParsing="false" onAction="#home" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: a0a2ab;" text="DashBord" textFill="#a0a2ab">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.0" />
+                    </effect>
+                </Button>
+                <Label layoutX="10.0" layoutY="250.0" prefHeight="100.0" prefWidth="230.0" text="Welcome to NextNest! &#10;Discover, connect, and settle&#10;effortlessly." textAlignment="CENTER" textFill="#a0a2ab">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button layoutX="35.0" layoutY="500.0" mnemonicParsing="false" onAction="#Profile" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: a0a2ab;" text="Profile" textFill="#a0a2ab">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="35.0" layoutY="560.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: a0a2ab;" text="NewPost" textFill="#a0a2ab">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect>
+                </Button>
+                <Button layoutX="35.0" layoutY="620.0" mnemonicParsing="false" onAction="#Review" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-color: a0a2ab;" text="Review&amp;Complain" textFill="#a0a2ab">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Line endX="90.0" layoutX="105.0" layoutY="740.0" startX="-90.0" stroke="#a0a2ab" />
+                <Button layoutX="70.0" layoutY="765.0" mnemonicParsing="false" onAction="#aboutUs" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: a0a2ab;" text="AboutUs" textFill="#a0a2ab">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="250.0" prefHeight="50.0" prefWidth="950.0" style="-fx-background-color: #2D3447;">
+            <children>
+                <TextField layoutX="470.0" layoutY="10.0" prefHeight="30.0" prefWidth="250.0" promptText="Search" />
+                <MenuBar layoutX="740.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2D3447;">
+                    <menus>
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Button mnemonicParsing="false" onAction="#Profile" prefHeight="30.0" prefWidth="45.0" style="-fx-background-color: transparent;">
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="45.0">
+                                            <image>
+                                                <Image url="@../../../pp.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </graphic>
+                        </Menu>
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="45.0" style="-fx-background-color: transparent;">
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                                            <image>
+                                                <Image url="@../../../noti.png" />
+                                            </image>
+                                            <effect>
+                                                <Glow level="1.0" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </graphic>
+                            <items>
+                                <MenuItem mnemonicParsing="false">
+                                    <graphic>
+                                        <Label text="Mr.Fahad has confirmed your deal" textFill="#a0a2ab" />
+                                    </graphic>
+                                </MenuItem>
+                                <MenuItem mnemonicParsing="false">
+                                    <graphic>
+                                        <Label text="Mr.Fahad has canceled your deal" textFill="#a0a2ab" />
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#settings" text="Settings" />
+                                <MenuItem mnemonicParsing="false" text="Help" />
+                                <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                            </items>
+                            <graphic>
+                                <ImageView fitHeight="35.0" fitWidth="35.0">
+                                    <image>
+                                        <Image url="@../../../3dot.png" />
+                                    </image>
+                                    <effect>
+                                        <Glow level="0.38" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </AnchorPane>
+        <ScrollPane layoutX="250.0" layoutY="50.0" prefHeight="850.0" prefWidth="950.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1150.0" prefWidth="950.0" style="-fx-background-color: #2D3447;">
+                    <children>
+                        <TextArea fx:id="textArea2" layoutX="15.0" layoutY="200.0" prefHeight="300.0" prefWidth="920.0" promptText="Write a description" style="-fx-border-color: #151244; -fx-border-width: 3;">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextArea>
+                        <Label layoutX="350.0" layoutY="30.0" prefHeight="35.0" prefWidth="220.0" text="Add A New Post" textFill="WHITE">
+                            <font>
+                                <Font size="28.0" />
+                            </font>
+                        </Label>
+                        <Line endX="500.0" endY="-15.0" layoutX="150.0" layoutY="100.0" startX="250.0" startY="-15.0" stroke="WHITE" />
+                        <Button layoutX="250.0" layoutY="1050.0" mnemonicParsing="false" onAction="#addtemp" style="-fx-background-color: #151928; -fx-border-color: a0a2ab;" text="Tameplates" textFill="#a0a2ab">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="650.0" layoutY="1050.0" mnemonicParsing="false" onAction="#addPic" style="-fx-background-color: #151928; -fx-border-color: a0a2ab;" text="Photos/Videos" textFill="#a0a2ab">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="price" layoutX="140.0" layoutY="540.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter Asking Amount

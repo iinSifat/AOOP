@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginwithdbms.UserPostsController">
+    <Text text="Your Posts" layoutX="150" layoutY="20"/>
+
+    <ListView fx:id="postsListView" layoutX="50" layoutY="60" prefHeight="300" prefWidth="400"/>
+</AnchorPane>

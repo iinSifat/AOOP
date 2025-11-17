@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.switching_scene.SceneController">
+   <children>
+      <Label layoutX="219.0" layoutY="28.0" text="This is Scene 1" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="204.0" layoutY="181.0" mnemonicParsing="false" onAction="#ChangeToScene2" text="Cick to swith Scene 2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="14.0" layoutY="16.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ChangeToScene2" text="Scene2" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

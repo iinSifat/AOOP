@@ -1,0 +1,40 @@
+Server started on port 8080
+Client-1 connected.
+Client-2 connected.
+Client-3 connected.
+Client-4 connected.
+Client-4 disconnected.
+Server started on port 8080
+Client-0 connected.
+Client-1 connected.
+Client-2 connected.
+Client-3 connected.
+Client-0:hey
+Client-4 connected.
+Server started on port 8080
+Server started on port 8080
+Client-0 connected.
+Client-0: heuy
+Client-1 connected.
+Server started on port 8080
+Client-0 connected.
+Client-1 connected.
+Client-2 connected.
+Client-2: hahahhahah
+Client-0: lol
+Client-1: ssasa
+Client-3 connected.
+Server started on port 8080
+Client-0 connected.
+Client-1 connected.
+Client-1: lop
+Client-0: no;
+Server started on port 8080
+Client-0 connected.
+Client-1 connected.
+Client-1: hwllo
+Client-0: 
+Client-1: lol
+Client-1: hah
+Client-2 connected.
+Client-2 disconnected.

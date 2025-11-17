@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.image_view.HelloController">
+   <children>
+      <Button fx:id="button" layoutX="256.0" layoutY="293.0" mnemonicParsing="false" onAction="#Switch" text="Switch Image" />
+      <ImageView fx:id="myImageView" fitHeight="232.0" fitWidth="188.0" layoutX="213.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/img_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
